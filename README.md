@@ -105,18 +105,70 @@ flutter build ipa --release
 
 ## 🌐 API
 
-Rates are fetched from the **Open Exchange Rates API (free tier)**:
+Rates are fetched from **[currencyapi.com](https://currencyapi.com) v3**:
+
+### Setup
+
+1. Register for a free API key at [app.currencyapi.com](https://app.currencyapi.com/register)
+2. Open `lib/services/exchange_rate_service.dart`
+3. Replace the placeholder with your key:
+
+```dart
+static const String _apiKey = 'YOUR_API_KEY_HERE';
+```
+
+### Endpoints used
+
+| Endpoint | URL | Purpose |
+|----------|-----|---------|
+| Latest rates | `GET /v3/latest` | Home screen & converter |
+| Historical rates | `GET /v3/historical` | Detail screen chart |
+
+### Example requests
 
 ```
-GET https://open.er-api.com/v6/latest/{BASE_CURRENCY}
+# Latest rates
+GET https://api.currencyapi.com/v3/latest
+    ?apikey=YOUR_KEY
+    &base_currency=USD
+    &currencies=EUR,GBP,JPY,INR
+
+# Historical rate for a specific date
+GET https://api.currencyapi.com/v3/historical
+    ?apikey=YOUR_KEY
+    &base_currency=USD
+    &currencies=EUR
+    &date=2024-03-01
 ```
 
-- No API key required
-- Updates every 24 hours on the server
-- The app caches responses for **5 minutes** to avoid redundant calls
-- Auto-refreshes in the background every **60 seconds**
+### Response format
 
-To switch to a different provider (e.g. Frankfurter, ExchangeRate.host), update `ExchangeRateService` in `lib/services/exchange_rate_service.dart`.
+```json
+{
+  "meta": { "last_updated_at": "2024-03-01T23:59:59Z" },
+  "data": {
+    "EUR": { "code": "EUR", "value": 0.9234 },
+    "GBP": { "code": "GBP", "value": 0.7891 }
+  }
+}
+```
+
+### Caching & refresh
+
+- Responses are cached in memory for **5 minutes** to reduce API calls
+- Rates auto-refresh in the background every **60 seconds**
+- Pull-to-refresh triggers an immediate re-fetch and clears the cache
+
+### Free plan limits
+
+| Feature | Free tier |
+|---------|-----------|
+| Monthly requests | 300 |
+| Update frequency | Daily |
+| Historical data | Yes |
+| Base currency switch | Yes |
+
+Upgrade at [currencyapi.com/pricing](https://currencyapi.com/pricing) for higher limits and hourly updates.
 
 ---
 
