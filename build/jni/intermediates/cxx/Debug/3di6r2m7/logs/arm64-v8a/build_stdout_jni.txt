@@ -1,2 +1,0 @@
-ninja: Entering directory `/Users/darshansingh/.pub-cache/hosted/pub.dev/jni-1.0.0/android/.cxx/Debug/3di6r2m7/arm64-v8a'
-ninja: no work to do.
