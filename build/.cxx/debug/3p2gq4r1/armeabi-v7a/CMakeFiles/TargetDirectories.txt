@@ -1,2 +1,0 @@
-/Users/darshansingh/StudioProjects/Rateexchangelive/build/.cxx/debug/3p2gq4r1/armeabi-v7a/CMakeFiles/edit_cache.dir
-/Users/darshansingh/StudioProjects/Rateexchangelive/build/.cxx/debug/3p2gq4r1/armeabi-v7a/CMakeFiles/rebuild_cache.dir
