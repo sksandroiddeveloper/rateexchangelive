@@ -2,23 +2,42 @@
 
 A real-time currency exchange rate Flutter app with a built-in converter, live rate tracking, trader profiles, and a user discovery system.
 
+> **API powered by [currencyapi.com v3](https://currencyapi.com)**
+
 ---
 
 ## 📱 Screenshots
 
-| Watchlist | Converter | Detail View | User Profile |
-|-----------|-----------|-------------|--------------|
-| Live rates for your watchlist | Convert between 25 currencies | Chart + quick convert table | Trader stats + watchlist |
+<table>
+  <tr>
+    <td align="center"><b>Home — Watchlist</b></td>
+    <td align="center"><b>Detail — Chart</b></td>
+    <td align="center"><b>Leaderboard</b></td>
+    <td align="center"><b>User Profile</b></td>
+  </tr>
+  <tr>
+    <td><img src="screenshots/screen1_home.svg" width="200"/></td>
+    <td><img src="screenshots/screen2_detail.svg" width="200"/></td>
+    <td><img src="screenshots/screen3_leaderboard.svg" width="200"/></td>
+    <td><img src="screenshots/screen4_profile.svg" width="200"/></td>
+  </tr>
+  <tr>
+    <td align="center">Live rates + converter</td>
+    <td align="center">Price chart + quick convert</td>
+    <td align="center">Top traders ranked</td>
+    <td align="center">Stats, watchlist, activity</td>
+  </tr>
+</table>
 
 ---
 
 ## ✨ Features
 
-- **Live Exchange Rates** — Fetches real-time rates from [open.er-api.com](https://open.er-api.com) (free, no API key required)
+- **Live Exchange Rates** — Fetches real-time rates via [currencyapi.com v3](https://currencyapi.com)
 - **Currency Converter** — Convert between 25 currencies with a swap button
 - **Watchlist Tab** — Track your favourite currency pairs at a glance
 - **All Currencies Tab** — Browse all 25 supported currencies
-- **Detail Screen** — Price chart (7D / 14D / 30D), min/max stats, and a quick convert table per pair
+- **Detail Screen** — Real price chart (7D / 14D / 30D), min/max stats, and a quick convert table per pair
 - **User Profiles** — Public + trader profiles with stats, watchlist, and recent activity
 - **Leaderboard** — Discover top traders ranked by total profit
 - **Search** — Find traders by username, name, country, or favourite pair
@@ -41,7 +60,7 @@ lib/
 │   └── user_profile.dart      # UserProfile & TradeActivity models, mock data
 │
 ├── services/
-│   ├── exchange_rate_service.dart   # API calls, caching (5 min TTL)
+│   ├── exchange_rate_service.dart   # currencyapi.com v3 calls + 5min cache
 │   └── user_service.dart            # Search, leaderboard, follow logic
 │
 ├── screens/
@@ -63,6 +82,7 @@ lib/
 - Flutter SDK `>=3.0.0`
 - Dart SDK `>=3.0.0`
 - Android Studio / VS Code with Flutter plugin
+- A free API key from [currencyapi.com](https://app.currencyapi.com/register)
 
 ### Installation
 
@@ -74,7 +94,10 @@ cd rateexchangelive
 # 2. Install dependencies
 flutter pub get
 
-# 3. Run the app
+# 3. Add your API key in lib/services/exchange_rate_service.dart
+#    static const String _apiKey = 'YOUR_API_KEY_HERE';
+
+# 4. Run the app
 flutter run
 ```
 
@@ -94,7 +117,7 @@ flutter build ipa --release
 
 | Package | Version | Purpose |
 |--------|---------|---------|
-| `http` | ^1.2.0 | API requests to exchange rate endpoint |
+| `http` | ^1.2.0 | API requests to currencyapi.com |
 | `intl` | ^0.19.0 | Number and date formatting |
 | `fl_chart` | ^0.68.0 | Price chart on the detail screen |
 | `shimmer` | ^3.0.0 | Skeleton loading states |
@@ -220,16 +243,9 @@ Future<List<UserProfile>> getLeaderboard() async {
 
 ### Use real historical chart data
 
-In `lib/screens/detail_screen.dart`, replace `_generateSimulatedHistory()` with a real API call:
+The detail screen already calls `getHistoricalRates()` which hits `/v3/historical` on currencyapi.com. Just make sure your API key is set and the chart will display real data automatically.
 
-```dart
-Future<List<FlSpot>> _fetchHistory(String from, String to, int days) async {
-  final response = await http.get(Uri.parse(
-    'https://your-history-api.com/history?from=$from&to=$to&days=$days'
-  ));
-  // parse into List<FlSpot>
-}
-```
+> Note: the free plan allows 300 requests/month. Fetching 30 days of history costs 30 requests per pair — limit the default chart range to 7D on free plans.
 
 ---
 
@@ -251,6 +267,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## 🙏 Acknowledgements
 
-- [open.er-api.com](https://open.er-api.com) — Free exchange rate API
+- [currencyapi.com](https://currencyapi.com) — Real-time & historical exchange rate API
 - [fl_chart](https://pub.dev/packages/fl_chart) — Beautiful Flutter charts
 - [Flutter](https://flutter.dev) — Cross-platform mobile framework

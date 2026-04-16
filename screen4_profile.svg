@@ -1,0 +1,113 @@
+<svg width="320" height="620" viewBox="0 0 320 620" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <!-- Phone shell -->
+  <rect width="320" height="620" rx="36" fill="#1A1A1A"/>
+  <rect x="6" y="6" width="308" height="608" rx="31" fill="#1C1C1E"/>
+
+  <!-- Status bar -->
+  <rect x="6" y="6" width="308" height="34" rx="31" fill="#1C1C1E"/>
+  <rect x="6" y="28" width="308" height="12" fill="#1C1C1E"/>
+  <text x="20" y="28" font-size="11" font-weight="700" fill="white">9:41</text>
+  <text x="270" y="28" font-size="11" font-weight="700" fill="white">100%</text>
+
+  <!-- App bar bg -->
+  <rect x="6" y="38" width="308" height="44" fill="#1C1C1E"/>
+  <text x="20" y="64" font-size="14" fill="white">←</text>
+  <text x="36" y="64" font-size="13" font-weight="700" fill="white">@yuki_yen</text>
+  <line x1="6" y1="82" x2="314" y2="82" stroke="#3A3A3C" stroke-width="1"/>
+
+  <!-- Avatar + info -->
+  <circle cx="64" cy="126" r="36" fill="#3C1111" stroke="#C62828" stroke-width="2"/>
+  <text x="64" y="132" font-size="18" font-weight="700" fill="#C62828" text-anchor="middle">YT</text>
+
+  <text x="114" y="112" font-size="17" font-weight="700" fill="white">Yuki Tanaka</text>
+  <text x="114" y="112">
+    <tspan dx="104" dy="0" font-size="14" fill="#1A73E8">✓</tspan>
+  </text>
+  <text x="114" y="126" font-size="11" fill="#888">@yuki_yen  •  🇯🇵 Japan</text>
+  <text x="114" y="140" font-size="10" fill="#666">Joined Sep 2020</text>
+
+  <!-- Follow button -->
+  <rect x="114" y="148" width="80" height="28" rx="14" fill="#1A73E8"/>
+  <text x="154" y="166" font-size="12" font-weight="600" fill="white" text-anchor="middle">Following ✓</text>
+
+  <!-- Bio -->
+  <rect x="14" y="174" width="292" height="44" rx="12" fill="#2C2C2E" stroke="#3A3A3C" stroke-width="1"/>
+  <text x="26" y="192" font-size="11" fill="#ccc">Tokyo session. JPY pairs and Asian currencies.</text>
+  <text x="26" y="206" font-size="11" fill="#ccc">為替トレーダー 🇯🇵</text>
+
+  <!-- Followers row -->
+  <rect x="14" y="226" width="292" height="48" rx="12" fill="#2C2C2E" stroke="#3A3A3C" stroke-width="1"/>
+  <text x="70" y="248" font-size="16" font-weight="700" fill="white" text-anchor="middle">6,210</text>
+  <text x="70" y="262" font-size="10" fill="#888" text-anchor="middle">Followers</text>
+  <line x1="160" y1="234" x2="160" y2="266" stroke="#3A3A3C" stroke-width="1"/>
+  <text x="250" y="248" font-size="16" font-weight="700" fill="white" text-anchor="middle">52</text>
+  <text x="250" y="262" font-size="10" fill="#888" text-anchor="middle">Following</text>
+
+  <!-- Trader stats -->
+  <rect x="14" y="282" width="292" height="100" rx="12" fill="#2C2C2E" stroke="#3A3A3C" stroke-width="1"/>
+  <text x="28" y="302" font-size="13" font-weight="600" fill="white">Trader Stats</text>
+
+  <!-- 4 stat boxes -->
+  <rect x="22" y="310" width="64" height="62" rx="8" fill="#1C1C1E"/>
+  <text x="54" y="334" font-size="18" font-weight="700" fill="#0F9D58" text-anchor="middle">+391%</text>
+  <text x="54" y="348" font-size="9" fill="#666" text-anchor="middle">Total profit</text>
+  <text x="54" y="362" font-size="9" fill="#888" text-anchor="middle">all time</text>
+
+  <rect x="94" y="310" width="64" height="62" rx="8" fill="#1C1C1E"/>
+  <text x="126" y="334" font-size="18" font-weight="700" fill="white" text-anchor="middle">74.6%</text>
+  <text x="126" y="348" font-size="9" fill="#666" text-anchor="middle">Win rate</text>
+  <text x="126" y="362" font-size="9" fill="#888" text-anchor="middle">lifetime</text>
+
+  <rect x="166" y="310" width="64" height="62" rx="8" fill="#1C1C1E"/>
+  <text x="198" y="334" font-size="16" font-weight="700" fill="white" text-anchor="middle">9,804</text>
+  <text x="198" y="348" font-size="9" fill="#666" text-anchor="middle">Total trades</text>
+  <text x="198" y="362" font-size="9" fill="#888" text-anchor="middle">all time</text>
+
+  <rect x="238" y="310" width="60" height="62" rx="8" fill="#1C1C1E"/>
+  <text x="268" y="334" font-size="16" font-weight="700" fill="white" text-anchor="middle">JPY</text>
+  <text x="268" y="348" font-size="9" fill="#666" text-anchor="middle">Top currency</text>
+  <text x="268" y="362" font-size="9" fill="#888" text-anchor="middle">focus</text>
+
+  <!-- Watchlist -->
+  <rect x="14" y="390" width="292" height="68" rx="12" fill="#2C2C2E" stroke="#3A3A3C" stroke-width="1"/>
+  <text x="28" y="410" font-size="13" font-weight="600" fill="white">Watchlist</text>
+  <rect x="26" y="418" width="44" height="22" rx="8" fill="#1C1C1E"/>
+  <text x="48" y="433" font-size="11" font-weight="600" fill="white" text-anchor="middle">JPY</text>
+  <rect x="76" y="418" width="44" height="22" rx="8" fill="#1C1C1E"/>
+  <text x="98" y="433" font-size="11" font-weight="600" fill="white" text-anchor="middle">USD</text>
+  <rect x="126" y="418" width="44" height="22" rx="8" fill="#1C1C1E"/>
+  <text x="148" y="433" font-size="11" font-weight="600" fill="white" text-anchor="middle">EUR</text>
+  <rect x="176" y="418" width="44" height="22" rx="8" fill="#1C1C1E"/>
+  <text x="198" y="433" font-size="11" font-weight="600" fill="white" text-anchor="middle">AUD</text>
+  <rect x="226" y="418" width="44" height="22" rx="8" fill="#1C1C1E"/>
+  <text x="248" y="433" font-size="11" font-weight="600" fill="white" text-anchor="middle">CNY</text>
+
+  <!-- Recent activity -->
+  <rect x="14" y="466" width="292" height="130" rx="12" fill="#2C2C2E" stroke="#3A3A3C" stroke-width="1"/>
+  <text x="28" y="486" font-size="13" font-weight="600" fill="white">Recent Activity</text>
+  <line x1="28" y1="494" x2="290" y2="494" stroke="#3A3A3C" stroke-width="0.5"/>
+
+  <!-- Activity rows -->
+  <rect x="26" y="500" width="36" height="16" rx="4" fill="#0D2E1A"/>
+  <text x="44" y="512" font-size="10" font-weight="600" fill="#0F9D58" text-anchor="middle">BUY</text>
+  <text x="72" y="512" font-size="11" font-weight="600" fill="white">USD/JPY</text>
+  <text x="290" y="512" font-size="11" font-weight="600" fill="#0F9D58" text-anchor="end">+1.7%</text>
+  <text x="72" y="524" font-size="10" fill="#666">45 min ago</text>
+  <line x1="28" y1="530" x2="290" y2="530" stroke="#3A3A3C" stroke-width="0.5"/>
+
+  <rect x="26" y="536" width="36" height="16" rx="4" fill="#3B1212"/>
+  <text x="44" y="548" font-size="10" font-weight="600" fill="#D93025" text-anchor="middle">SELL</text>
+  <text x="72" y="548" font-size="11" font-weight="600" fill="white">EUR/JPY</text>
+  <text x="290" y="548" font-size="11" font-weight="600" fill="#0F9D58" text-anchor="end">+0.9%</text>
+  <text x="72" y="560" font-size="10" fill="#666">3 hours ago</text>
+  <line x1="28" y1="566" x2="290" y2="566" stroke="#3A3A3C" stroke-width="0.5"/>
+
+  <rect x="26" y="572" width="36" height="16" rx="4" fill="#3B1212"/>
+  <text x="44" y="584" font-size="10" font-weight="600" fill="#D93025" text-anchor="middle">SELL</text>
+  <text x="72" y="584" font-size="11" font-weight="600" fill="white">GBP/JPY</text>
+  <text x="290" y="584" font-size="11" font-weight="600" fill="#0F9D58" text-anchor="end">+2.2%</text>
+  <text x="72" y="596" font-size="10" fill="#666">7 hours ago</text>
+
+  <!-- Bottom bar -->
+  <rect x="120" y="608" width="80" height="4" rx="2" fill="white"/>
+</svg>
