@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 620" width="320" height="620" font-family="system-ui,sans-serif">
+  <defs>
+    <clipPath id="phone1"><rect x="0" y="0" width="320" height="620" rx="32"/></clipPath>
+  </defs>
+  <g clip-path="url(#phone1)">
+    <rect width="320" height="620" fill="#0f172a"/>
+    <rect x="0" y="0" width="320" height="56" fill="#1e293b"/>
+    <text x="16" y="34" fill="#f1f5f9" font-size="17" font-weight="600">RateExchangeLive</text>
+    <circle cx="292" cy="28" r="12" fill="#334155"/>
+    <text x="292" y="33" fill="#94a3b8" font-size="12" text-anchor="middle">☀</text>
+
+    <rect x="0" y="56" width="320" height="36" fill="#1e293b"/>
+    <rect x="16" y="66" width="80" height="18" rx="9" fill="#3b82f6"/>
+    <text x="56" y="79" fill="#fff" font-size="11" font-weight="500" text-anchor="middle">Watchlist</text>
+    <text x="148" y="79" fill="#64748b" font-size="11" text-anchor="middle">All currencies</text>
+
+    <rect x="12" y="104" width="296" height="72" rx="10" fill="#1e293b"/>
+    <rect x="28" y="116" width="36" height="36" rx="18" fill="#1d4ed8"/>
+    <text x="46" y="139" fill="#93c5fd" font-size="13" font-weight="700" text-anchor="middle">€</text>
+    <text x="76" y="127" fill="#f1f5f9" font-size="13" font-weight="600">EUR / USD</text>
+    <text x="76" y="143" fill="#64748b" font-size="11">Euro</text>
+    <text x="284" y="127" fill="#f1f5f9" font-size="13" font-weight="600" text-anchor="end">1.0842</text>
+    <rect x="243" y="147" width="41" height="16" rx="4" fill="#14532d"/>
+    <text x="263" y="159" fill="#4ade80" font-size="10" text-anchor="middle">+0.32%</text>
+    <polyline points="176,148 186,142 196,145 206,138 216,140 226,134 236,137" fill="none" stroke="#4ade80" stroke-width="1.5"/>
+
+    <rect x="12" y="184" width="296" height="72" rx="10" fill="#1e293b"/>
+    <rect x="28" y="196" width="36" height="36" rx="18" fill="#7c3aed"/>
+    <text x="46" y="219" fill="#c4b5fd" font-size="13" font-weight="700" text-anchor="middle">£</text>
+    <text x="76" y="207" fill="#f1f5f9" font-size="13" font-weight="600">GBP / USD</text>
+    <text x="76" y="223" fill="#64748b" font-size="11">British Pound</text>
+    <text x="284" y="207" fill="#f1f5f9" font-size="13" font-weight="600" text-anchor="end">1.2674</text>
+    <rect x="243" y="227" width="41" height="16" rx="4" fill="#7f1d1d"/>
+    <text x="263" y="239" fill="#f87171" font-size="10" text-anchor="middle">-0.15%</text>
+    <polyline points="176,228 186,226 196,232 206,228 216,234 226,230 236,237" fill="none" stroke="#f87171" stroke-width="1.5"/>
+
+    <rect x="12" y="264" width="296" height="72" rx="10" fill="#1e293b"/>
+    <rect x="28" y="276" width="36" height="36" rx="18" fill="#b45309"/>
+    <text x="46" y="299" fill="#fcd34d" font-size="11" font-weight="700" text-anchor="middle">JPY</text>
+    <text x="76" y="287" fill="#f1f5f9" font-size="13" font-weight="600">JPY / USD</text>
+    <text x="76" y="303" fill="#64748b" font-size="11">Japanese Yen</text>
+    <text x="284" y="287" fill="#f1f5f9" font-size="13" font-weight="600" text-anchor="end">149.82</text>
+    <rect x="243" y="307" width="41" height="16" rx="4" fill="#14532d"/>
+    <text x="263" y="319" fill="#4ade80" font-size="10" text-anchor="middle">+0.54%</text>
+    <polyline points="176,308 186,304 196,306 206,300 216,302 226,296 236,298" fill="none" stroke="#4ade80" stroke-width="1.5"/>
+
+    <rect x="12" y="344" width="296" height="72" rx="10" fill="#1e293b"/>
+    <rect x="28" y="356" width="36" height="36" rx="18" fill="#065f46"/>
+    <text x="46" y="379" fill="#6ee7b7" font-size="11" font-weight="700" text-anchor="middle">INR</text>
+    <text x="76" y="367" fill="#f1f5f9" font-size="13" font-weight="600">INR / USD</text>
+    <text x="76" y="383" fill="#64748b" font-size="11">Indian Rupee</text>
+    <text x="284" y="367" fill="#f1f5f9" font-size="13" font-weight="600" text-anchor="end">83.21</text>
+    <rect x="243" y="387" width="41" height="16" rx="4" fill="#7f1d1d"/>
+    <text x="263" y="399" fill="#f87171" font-size="10" text-anchor="middle">-0.08%</text>
+    <polyline points="176,388 186,390 196,387 206,391 216,389 226,392 236,390" fill="none" stroke="#f87171" stroke-width="1.5"/>
+
+    <rect x="12" y="428" width="296" height="88" rx="10" fill="#1e293b"/>
+    <text x="24" y="447" fill="#94a3b8" font-size="11" font-weight="500">Quick convert</text>
+    <rect x="20" y="454" width="126" height="36" rx="8" fill="#334155"/>
+    <text x="33" y="468" fill="#94a3b8" font-size="10">From</text>
+    <text x="33" y="482" fill="#f1f5f9" font-size="14" font-weight="600">USD  1,000</text>
+    <text x="160" y="476" fill="#3b82f6" font-size="18" font-weight="700" text-anchor="middle">⇄</text>
+    <rect x="174" y="454" width="126" height="36" rx="8" fill="#334155"/>
+    <text x="187" y="468" fill="#94a3b8" font-size="10">To</text>
+    <text x="187" y="482" fill="#4ade80" font-size="14" font-weight="600">EUR  922.80</text>
+    <text x="160" y="507" fill="#475569" font-size="10" text-anchor="middle">Updated 2 min ago</text>
+
+    <rect x="0" y="572" width="320" height="48" fill="#1e293b"/>
+    <text x="53" y="601" fill="#3b82f6" font-size="10" text-anchor="middle">Rates</text>
+    <text x="160" y="601" fill="#64748b" font-size="10" text-anchor="middle">Chart</text>
+    <text x="267" y="601" fill="#64748b" font-size="10" text-anchor="middle">Traders</text>
+    <rect x="32" y="572" width="42" height="2" rx="1" fill="#3b82f6"/>
+    <rect x="38" y="578" width="30" height="16" rx="8" fill="#1d4ed8"/>
+    <text x="53" y="590" fill="#93c5fd" font-size="10" text-anchor="middle">~</text>
+    <rect x="140" y="578" width="40" height="16" rx="8" fill="#334155"/>
+    <text x="160" y="590" fill="#64748b" font-size="10" text-anchor="middle">chart</text>
+    <rect x="246" y="578" width="42" height="16" rx="8" fill="#334155"/>
+    <text x="267" y="590" fill="#64748b" font-size="10" text-anchor="middle">people</text>
+  </g>
+  <rect x="0" y="0" width="320" height="620" rx="32" fill="none" stroke="#334155" stroke-width="2"/>
+</svg>
